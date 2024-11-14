@@ -1,13 +1,13 @@
-#define BLYNK_TEMPLATE_ID "TMPL6VeYXVAbf"
+#define BLYNK_TEMPLATE_ID "*************"
 #define BLYNK_TEMPLATE_NAME "LPG Gas Sensor"
-#define BLYNK_AUTH_TOKEN "c15jCpIoOHeyeBH4dEO_F5P4oUzfjEOi"
+#define BLYNK_AUTH_TOKEN "***************************"
 
 #include <ESP8266WiFi.h>
 #include <BlynkSimpleEsp8266.h>
 
 char auth[] = BLYNK_AUTH_TOKEN; // Blynk authentication token
-char ssid[] = "lpg";        // WiFi network name
-char pass[] = "12345678"; // WiFi password
+char ssid[] = "********";        // WiFi network name
+char pass[] = "********"; // WiFi password
 
 BlynkTimer timer;
 
