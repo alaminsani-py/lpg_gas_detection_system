@@ -1,4 +1,4 @@
-# 🌟 **🚨 LPG Gas Detection System with IoT Integration** 🌟  
+#  **🚨 LPG Gas Detection System with IoT Integration** 
 
 A compact and intelligent **LPG Gas Detection System** that combines real-time monitoring, IoT connectivity, and user-friendly alerts. Built using an **MQ-6 Gas Sensor**, **Arduino Uno**, **NodeMCU**, and a **1.3-inch OLED Display**, this system ensures safety by detecting gas leaks and sending alerts to your mobile device.  
 
