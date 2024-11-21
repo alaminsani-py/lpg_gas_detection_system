@@ -130,9 +130,9 @@ Contributions are welcome! If you have ideas for improvement, please open an iss
 
 ---
 
-## 👤 **Author**
+## 📝 **Author**
 
-👨‍💻 Created by **[Your Name]**.  
+💻 Created by **Alamin Sani**.  
 If you found this project helpful, don’t forget to **⭐ star this repository**!  
 
 ---
