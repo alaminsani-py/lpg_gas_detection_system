@@ -135,6 +135,3 @@ Contributions are welcome! If you have ideas for improvement, please open an iss
 💻 Created by **Alamin Sani**.  
 If you found this project helpful, don’t forget to **⭐ star this repository**!  
 
----
-
-This version adds inline icons, formatting, and tables to make your GitHub page visually appealing and easier to read. Let me know if you need additional changes!
