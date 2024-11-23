@@ -1,30 +1,31 @@
 #include "U8glib.h"
 
-U8GLIB_SH1106_128X64 oled(U8G_I2C_OPT_NONE); // Initialize display with U8glib
+U8GLIB_SH1106_128X64 oled(U8G_I2C_OPT_NONE); 
 
-const int gasSensorPin = A0; // MQ-6 analog output connected to A0
-const int threshold = 10;    // Set a threshold for high gas level
-const int buzzerPin1 = 12;   // Buzzer connected to pin 12
-const int buzzerPin2 = 8;    // Buzzer connected to pin 8
-bool warningBlink = false;   // Flag for blinking effect
+const int gasSensorPin = A0; 
+const int threshold = 10;    
+const int buzzerPin1 = 12;   
+const int buzzerPin2 = 8;    
+bool warningBlink = false;   
+
 
 void setup() {
-  Serial.begin(9600);         // Serial communication with the NodeMCU
-  pinMode(buzzerPin1, OUTPUT); // Set buzzer pins as outputs
+  Serial.begin(9600);         
+  pinMode(buzzerPin1, OUTPUT);
   pinMode(buzzerPin2, OUTPUT);
 }
 
 void loop() {
-  int gasValue = analogRead(gasSensorPin); // Read MQ-6 analog value
-  int barWidth = map(gasValue, 0, 1023, 0, 100); // Map gas value to a 100-pixel width
+  
+  int gasValue = analogRead(gasSensorPin); 
+  int barWidth = map(gasValue, 0, 1023, 0, 100);
 
-  // Send gas value over Serial to NodeMCU
+  
   Serial.println(gasValue); 
 
-  // Toggle the warning blink state
+  
   warningBlink = !warningBlink;
 
-  // Check if the gas level is above the threshold
   if (gasValue > threshold) {
     digitalWrite(buzzerPin1, HIGH);
     digitalWrite(buzzerPin2, HIGH);
@@ -33,23 +34,22 @@ void loop() {
     digitalWrite(buzzerPin2, LOW);
   }
 
-  // Display gas level and warning icon if necessary
   oled.firstPage();
   do {
     displayGasLevel(gasValue, barWidth);
   } while (oled.nextPage());
 
-  delay(500); // Refresh rate of display
+  delay(500); 
 }
 
 void displayGasLevel(int gasValue, int barWidth) {
-  oled.setFont(u8g_font_8x13); // Set font for gas level text
+  oled.setFont(u8g_font_8x13); 
 
   oled.setPrintPos(0, 20); 
   oled.print("Gas Level: ");
   oled.print(gasValue);
 
-  // Draw loading bar
+ 
   int barX = 14; 
   int barY = 40; 
   int barHeight = 8; 
