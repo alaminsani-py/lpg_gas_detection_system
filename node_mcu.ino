@@ -5,17 +5,17 @@
 #include <ESP8266WiFi.h>
 #include <BlynkSimpleEsp8266.h>
 
-char auth[] = BLYNK_AUTH_TOKEN; // Blynk authentication token
-char ssid[] = "********";        // WiFi network name
-char pass[] = "********"; // WiFi password
+char auth[] = BLYNK_AUTH_TOKEN; 
+char ssid[] = "********";        
+char pass[] = "********"; 
 
 BlynkTimer timer;
 
 void setup() {
-  Serial.begin(9600); // Start Serial communication with Arduino
-  Blynk.begin(auth, ssid, pass); // Connect to WiFi and Blynk
+  Serial.begin(9600); 
+  Blynk.begin(auth, ssid, pass); 
 
-  timer.setInterval(1000L, sendGasData); // Check for data every second
+  timer.setInterval(1000L, sendGasData); 
 }
 
 void loop() {
@@ -24,8 +24,8 @@ void loop() {
 }
 
 void sendGasData() {
-  if (Serial.available() > 0) {            // Check if data is available from Arduino
-    int gasValue = Serial.parseInt();      // Read the integer sent by Arduino
-    Blynk.virtualWrite(V1, gasValue);      // Send gas value to Blynk on Virtual Pin V1
+  if (Serial.available() > 0) {            
+    int gasValue = Serial.parseInt();      
+    Blynk.virtualWrite(V1, gasValue);      
   }
 }
