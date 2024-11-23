@@ -130,12 +130,6 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
 
 ---
 
-## 🤝 **Contributing**
-
-Contributions are welcome! If you have ideas for improvement, please open an issue or submit a pull request.  
-
----
-
 ## 📝 **Author**
 
 💻 Created by **Alamin Sani**.  
