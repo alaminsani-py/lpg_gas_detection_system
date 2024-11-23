@@ -4,6 +4,11 @@ A compact and intelligent **LPG Gas Detection System** that combines real-time m
 
 ---
 
+## 3D Model
+<a href="https://www.tinkercad.com/things/k6J3IgsM2fz-lpg-gas-detection-system?sharecode=ACuUXU9nO2Kf_RjmGzpoGDxyFrbkez9Pq1xn3k_VUe8" target="_blank">
+  <img src="https://img.shields.io/badge/VIEW%20MODEL-TINKERCAD-00ADEF?style=for-the-badge&logo=tinkercad&logoColor=white" alt="View Model">
+</a>
+
 ## 🎯 **Features**
 
 ✔️ **Real-Time Monitoring**: Continuously detects LPG gas levels.  
@@ -109,10 +114,6 @@ The **NodeMCU** sends gas level data to the **Blynk App**, enabling remote monit
 | **High Gas Levels Detected** | Trigger buzzer and send an alert.|
 
 ---
-## 3D Model
-<a href="https://www.tinkercad.com/things/k6J3IgsM2fz-lpg-gas-detection-system?sharecode=ACuUXU9nO2Kf_RjmGzpoGDxyFrbkez9Pq1xn3k_VUe8" target="_blank">
-  <img src="https://img.shields.io/badge/VIEW%20MODEL-TINKERCAD-00ADEF?style=for-the-badge&logo=tinkercad&logoColor=white" alt="View Model">
-</a>
 
 ## 📈 **Future Enhancements**
 
